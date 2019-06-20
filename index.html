@@ -9,32 +9,37 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>Calculadora de Juros</title>
+    <title>Calculadora de Juros Compostos</title>
+
+    <img src="img/background2.png" style="position:fixed">
 </head>
-<body style="background-image: url(img/background.png);">
-
-<div class="container fluid" style="">
-
-        <h1 class="mt-5" style="text-align: center">Calcule aqui o rendimento do seu investimento!</h1>
-        <h5 style="text-align: center ">OBS: não use vírgulas.</h5>
+<body style="position: relative">
+      
+<div class="container fluid">
+            <h3 class="text-center">Instruções</h3>
+        <ul>
+            <h5 class="">Valor: entre com valor sem pontuação.</h5>
+            <h5 class="">Taxa de Juros: entre com a taxa de juros anual, utilize ponto para separar as casas decimais.</h5>
+            <h5 class="">Tempo: entre com os meses de investimento</h5>
+            <h5 class="">OBS: não use vírgulas.</h5>
+        </ul>
 
         <div class="row justify-content-center mt-5">
 
-            <input type="number" id="investimento" class="input-group-text col-4" placeholder="Valor em reais"></input>
+            <input type="money" id="investimento" class="input-group-text col-lg-3 col-sm-10" placeholder="Valor"></input>
 
-            <input type="numer" id="juros" class="input-group-text col-3" placeholder="Taxa de juros anual"></input>
+            <input type="numer" id="juros" class="input-group-text col-lg-3 col-sm-10" placeholder="Taxa de juros"></input>
 
-            <input type="number" id="meses" class="input-group-text col-3" placeholder="Meses de investimento"></input>
+            <input type="number" id="meses" class="input-group-text col-lg-3 col-sm-10" placeholder="Tempo"></input>
         
-            <button type="button" onclick="calcular()" class="btn btn-primary col-2">Calcular</button>
-        
+            <button type="button" onclick="calcular()" class="btn btn-primary col-lg-3 col-sm-10">Calcular</button>
        
         </div>
 
         <div class="row justify-content-center mt-3">
-            <input type="text" id="rendimento" class="input-group-text col-4" placeholder="Expectativa de rendimento"></input>
-            <input type="text" id="bruto" class="input-group-text col-4" placeholder="Ganho bruto"></input>
-            <input type="text" id="mensal" class="input-group-text col-4" placeholder="Média de ganhos por mês"></input>
+            <input type="text" id="rendimento" class="input-group-text col-lg-4 col-sm-10" placeholder="Rendimento"></input>
+            <input type="text" id="bruto" class="input-group-text col-lg-4 col-sm-10" placeholder="Ganho bruto"></input>
+            <input type="text" id="mensal" class="input-group-text col-lg-4 col-sm-10" placeholder="Média por mês"></input>
         </div>
 </div>
 
