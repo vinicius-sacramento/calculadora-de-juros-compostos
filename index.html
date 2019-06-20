@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Calculadora de Juros</title>
+</head>
+<body style="background-image: url(img/background.png);">
+
+<div class="container fluid" style="">
+
+        <h1 class="mt-5" style="text-align: center">Calcule aqui o rendimento do seu investimento!</h1>
+        <h5 style="text-align: center ">OBS: não use vírgulas.</h5>
+
+        <div class="row justify-content-center mt-5">
+
+            <input type="number" id="investimento" class="input-group-text col-4" placeholder="Valor em reais"></input>
+
+            <input type="numer" id="juros" class="input-group-text col-3" placeholder="Taxa de juros anual"></input>
+
+            <input type="number" id="meses" class="input-group-text col-3" placeholder="Meses de investimento"></input>
+        
+            <button type="button" onclick="calcular()" class="btn btn-primary col-2">Calcular</button>
+        
+       
+        </div>
+
+        <div class="row justify-content-center mt-3">
+            <input type="text" id="rendimento" class="input-group-text col-4" placeholder="Expectativa de rendimento"></input>
+            <input type="text" id="bruto" class="input-group-text col-4" placeholder="Ganho bruto"></input>
+            <input type="text" id="mensal" class="input-group-text col-4" placeholder="Média de ganhos por mês"></input>
+        </div>
+</div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+
+    <script src="js/script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
